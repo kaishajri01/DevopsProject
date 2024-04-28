@@ -42,6 +42,7 @@ jobs:
           python visual_vision_back/manage.py migrate
       - name: Run Django server
         run: |
-          python visual_vision_back/manage.py runserver
+          python visual_vision_back/manage.py runserver &
+          background : true
       - name: Test debug
         run: echo "All Good"
