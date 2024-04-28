@@ -39,9 +39,9 @@ jobs:
         
       - name: Run Django migrations
         run: |
-          python manage.py migrate
+          python visual_vision_back/manage.py migrate
       - name: Run Django server
         run: |
-          python manage.py runserver
+          python visual_vision_back/manage.py runserver
       - name: Test debug
         run: echo "All Good"
